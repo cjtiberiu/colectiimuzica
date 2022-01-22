@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #BBE1FA;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: #0F4C75;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.home-page {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+body {
+    background: #1B262C;
+    min-height: 100vh;
+    min-width: 100%;
+    color: #BBE1FA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.colectie {
+    background: #1B262C;
+    margin-top: 20px;
+
+    &.card {
+        background: inherit;
+        border: 1px solid rgba(#BBE1FA, 0.7);
+    }
+
+    &__details {
+        flex-grow: 1;
+    }
+
+    &__img {
+        max-width: 260px;
+    }
+
+    &__artisti {
+        > li {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-right: 12px;
+
+            &:after {
+                right: 0;
+                content: ","
+            }
+
+            &:last-child {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    &__melodii {
+        .melodie {
+            padding: 6px 0;
+            border-bottom: 0.5px solid rgba(#BBE1FA, 0.2);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.navigation-wrapper {
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        padding: 8px 0;
+
+        > li {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-right: 16px;
+        }
+    }
+}
