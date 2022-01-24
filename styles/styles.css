@@ -11,13 +11,13 @@ html {
 
 a {
   text-decoration: none;
-  color: #BBE1FA;
+  color: #D1D4C9;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 a:hover {
-  color: #0F4C75;
+  color: #889074;
 }
 
 h1 {
@@ -46,12 +46,47 @@ h1 {
   list-style: none;
 }
 
+.custom-file-input {
+  border: 1px solid #29435C;
+  color: #D1D4C9;
+}
+
+.custom-file-input:hover {
+  background: #395d7f;
+  color: #D1D4C9;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  background: #395d7f;
+  color: #D1D4C9;
+}
+
+.custom-file-input::-webkit-file-upload-buttoninput:hover {
+  background: #395d7f;
+  color: #D1D4C9;
+}
+
+.btn-primary {
+  background: #395d7f;
+  color: #D1D4C9;
+  border: #D1D4C9;
+}
+
+.btn-primary:hover {
+  background: #29435C;
+  color: #D1D4C9;
+}
+
 body {
-  background: #1B262C;
+  background: #152A38;
   min-height: 100vh;
   min-width: 100%;
-  color: #BBE1FA;
-  font-family: 'Roboto', sans-serif;
+  color: #D1D4C9;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  padding-bottom: 60px;
 }
 
 .colectie {
@@ -61,7 +96,13 @@ body {
 
 .colectie.card {
   background: inherit;
-  border: 1px solid rgba(187, 225, 250, 0.7);
+  border: 1px solid rgba(41, 67, 92, 0.9);
+}
+
+.colectie__titlu {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(41, 67, 92, 0.9);
 }
 
 .colectie__details {
@@ -98,6 +139,39 @@ body {
   border-bottom: none;
 }
 
+.modal .modal-dialog {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  top: 20%;
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.modal .modal-content {
+  background: #152A38;
+  color: #D1D4C9;
+}
+
+.icon-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-list-item a {
+  margin-left: 8px;
+}
+
 .navigation-wrapper .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,9 +183,16 @@ body {
 }
 
 .navigation-wrapper .navigation > li {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 500;
-  margin-right: 16px;
+  margin-right: 32px;
+}
+
+.form-select {
+  background: #29435C;
+  color: #D1D4C9;
+  display: inline-block;
+  width: auto;
 }
 /*# sourceMappingURL=styles.css.map */
